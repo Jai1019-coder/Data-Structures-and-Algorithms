@@ -81,6 +81,5 @@ public class Solution {
         // Print inorder traversal after deletion
         inorder(root);
         System.out.println();
-        System.out.println();
     }
 }
