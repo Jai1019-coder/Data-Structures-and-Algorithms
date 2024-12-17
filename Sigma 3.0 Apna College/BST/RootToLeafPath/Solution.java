@@ -39,8 +39,9 @@ public class Solution {
     public static void path(Node root, ArrayList<Integer> arr){
         if(root == null) return;
         
+        arr.add(root.data);
         if(root.left == null && root.right ==null){
-            arr.add(root.data);
+            // arr.add(root.data);
             for (int i = 0; i < arr.size(); i++) {
                 System.out.print(arr.get(i)+"->");
             }
