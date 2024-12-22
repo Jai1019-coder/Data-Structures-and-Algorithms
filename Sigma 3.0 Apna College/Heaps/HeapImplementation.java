@@ -12,7 +12,11 @@ public class HeapImplementation {
                 int temp = arr.get(x);
                 arr.set(x, arr.get(parent));
                 arr.set(parent, temp);
+
+                x=parent;
+                parent=(x-1)/2;
             }
+            
         }
         public int peek(){
             return arr.get(0);
@@ -54,11 +58,14 @@ public class HeapImplementation {
     }
     public static void main(String[] args) {
         heap h = new heap();
-        h.add(5);
         h.add(6);
-        h.add(10);
-        h.add(4);
+        h.add(3);
         h.add(2);
+        h.add(-1);
+        h.add(-2);
+        h.add(4);
+        h.add(22);
+        h.add(5);
         while (!h.isEmpty()) {
             System.out.println(h.remove());
         }
