@@ -28,7 +28,6 @@ public class Solution2 {
         root.right.left = new Node(6);
         root.right.right = new Node(7);
         System.out.println(lca(root, 7, 6).data);
-        System.out.println();
         Node root2 = new Node(1);
         root2.left = new Node(2);
         root2.right = new Node(3);
