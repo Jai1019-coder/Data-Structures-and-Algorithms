@@ -48,7 +48,7 @@ public class LinkedList {
         System.out.println("null");
     }
     public void add(int index, int data){
-        if(index == 0){
+        if(index == 0){     
             addFirst(data);
             return;
         }
