@@ -17,22 +17,28 @@ public class FibonacciStarter {
             System.err.println("Error in handling input");
         }
         Fibonaccii fb = new Fibonaccii();
-        long res1 = fb.fibonacciWithDP(n);
         try {
-            bw.write(""+String.valueOf(res1)+"\n");
+            long resMem = fb.fibonacciWithDP(n, 0);
+            long resTab = fb.fibonacciWithDP(n, 1);
+            long resTab2 = fb.fibTabSpaceOptimised(n);
+            bw.write(""+String.valueOf(resTab)+"\n");
+            bw.flush();
+            bw.write(""+String.valueOf(resMem)+"\n");
+            bw.flush();
+            bw.write(""+String.valueOf(resTab2)+"\n");
             bw.flush();
         } catch (Exception e) {
             // TODO: handle exception
             System.err.println("Error in handling output");
         }
         
-        long res2 = fb.fibonacci(n);
-        try {
-            bw.write(""+String.valueOf(res2));
-            bw.flush();
-        } catch (Exception e) {
-            // TODO: handle exception
-            System.err.println("Error in handling output");
-        }
+        // long res2 = fb.fibonacci(n);
+        // try {
+        //     bw.write(""+String.valueOf(res2));
+        //     bw.flush();
+        // } catch (Exception e) {
+        //     // TODO: handle exception
+        //     System.err.println("Error in handling output");
+        // }
     }
 }
