@@ -17,7 +17,6 @@ public class BRRead {
                 bw.write(c);
                 bw.flush();
             } catch (Exception e) {
-                // TODO: handle exception
                 System.err.println(("Error in processing output"));
             }
         }

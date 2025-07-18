@@ -13,7 +13,6 @@ public class FibonacciStarter {
             n = Integer.parseInt(br.readLine());
             br.close();
         } catch (Exception e) {
-            // TODO: handle exception
             System.err.println("Error in handling input");
         }
         Fibonaccii fb = new Fibonaccii();
@@ -28,7 +27,6 @@ public class FibonacciStarter {
             bw.write(""+String.valueOf(resTab2)+"\n");
             bw.flush();
         } catch (Exception e) {
-            // TODO: handle exception
             System.err.println("Error in handling output");
         }
         
@@ -37,7 +35,7 @@ public class FibonacciStarter {
         //     bw.write(""+String.valueOf(res2));
         //     bw.flush();
         // } catch (Exception e) {
-        //     // TODO: handle exception
+        //    
         //     System.err.println("Error in handling output");
         // }
     }
